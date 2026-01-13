@@ -5,3 +5,38 @@
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
 }
+
+
+/* Shared Styles */
+.display-flex{
+    display: flex;
+}
+.drack-1{
+    color: #131313;
+}
+.text-gray{
+    color: #424242;
+}
+.bg-lite{
+    color: rgba(255, 144, 14, 0.1);
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+nav a{
+    text-decoration: none;
+}
+
+
+/* Main style */
+.nav-bar{
+    justify-content: space-between;
+}
+.nav-bar h3{
+    font-size: 45px;
+}
+.nav-link{
+    font-size: 18px;
+    line-height: 28px;
+}
