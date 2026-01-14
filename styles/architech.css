@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.font-work-sans> {
+.font-work-sans{
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
 }
@@ -11,32 +11,131 @@
 .display-flex{
     display: flex;
 }
+
 .drack-1{
     color: #131313;
+}
+.drack-3{
+    color: #727272;
 }
 .text-gray{
     color: #424242;
 }
+.primary-color{
+    color: #FF900E;
+}
+
 .bg-lite{
-    color: rgba(255, 144, 14, 0.1);
+    background-color: rgba(223, 123, 8, 0.1)
 }
 .nav-item{
     list-style: none;
     margin-right: 30px;
 }
+.heading-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 nav a{
     text-decoration: none;
+}
+
+.btn-primary{
+    background-color: #FF900E;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main> section{
+    margin-top: 130px;
 }
 
 
 /* Main style */
 .nav-bar{
     justify-content: space-between;
+    align-items: center;
 }
-.nav-bar h3{
-    font-size: 45px;
-}
+
 .nav-link{
     font-size: 18px;
     line-height: 28px;
+}
+.nav-bar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-content{
+    max-width: 865px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-description{
+    
+}
+.banner-img{
+    width: 100%;
+    margin-bottom: 45px;
+}
+.facts-description{
+    max-width: 542px;
+}
+/* team and feature related styles */
+.teams{
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 73px;
+    max-width: 537px;
+}
+#quick-list{
+    font-weight: 500;
+}
+.features{
+    color: #FF900E;
+}
+
+/* Our feature start */
+.love-heading{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .nav-bar,
+    .nav-links,
+    .teams{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
 }
