@@ -198,7 +198,17 @@ main> section{
 .sponsor-companys img{
     filter: grayscale(100%);
 }
+.footer-container{
+    max-width: 1440px;
+    margin: 130px auto 216px;
+    background-color: #FFF4E7;
+    text-align: center;
 
+}
+.footer-container p{
+    padding: 39px 0px 39px 0px;
+    font-size: 20px;
+}
 /* responsive media query */
 @media screen and (max-width:576px) {
     .nav-bar,
